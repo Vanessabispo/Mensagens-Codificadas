@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador</title>
+    <link rel="stylesheet" href="./stylo/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Mensagens codificadas <ion-icon name="mail-open"></ion-icon></h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="section-container">
+            <h2>Bem-vindo à mensagem codificadas</h2>
+            <p>Escreva logo abaixo para criptografar e descriptografar seus textos.
+            <strong>Atenção</strong>: Apenas letras maiúsculas e sem acentos!!
+            </p>
+            <div class="painel">
+                <label for="inputText">Seu texto:</label>
+                <textarea id="inputText" placeholder="Digite o texto aqui..."></textarea>
+                <label for="outputText">Mensagem gerada:</label>
+                <textarea id="outputText" placeholder="Resultado..." readonly></textarea>
+                <div class="bnt">
+                    <button onclick="criptografar()">Criptografar</button>
+                    <button onclick="descriptografar()">Descriptografar</button>
+                    <button onclick="limpar()">Limpar</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="icons">
+            <a href="https://github.com/Vanessabispo"><ion-icon name= "logo-github"></ion-icon></a>
+            <a href="https://www.linkedin.com/in/vanessabispodev/"><ion-icon name="logo-linkedin"></ion-icon></a>
+        </div>
+        <h3>Desenvolvido por Vanessa Bispo</h3>
+    </footer>
+
+    <script src="interacao/script.js"></script>
+    <script  src = "https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js" ></script >
+</body>
+</html>
